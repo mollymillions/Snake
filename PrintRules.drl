@@ -1,0 +1,41 @@
+//created on: May 22, 2013
+package com.snake
+
+//list any import classes here.
+
+
+//declare any global variables here
+
+
+
+rule "Print Blank"
+    when
+        $printNum : Number( );
+        eval($printNum.intValue() == 0)
+    then
+        //actions
+        System.out.print(" ");
+end
+
+rule "Print Snake"
+    //include attributes such as "salience" here...
+    when
+        //conditions
+        $printNum : Number( );
+        eval($printNum.intValue() == 1)
+    then
+        //actions
+		System.out.print("-");
+end
+
+rule "Print Apple"
+	salience -1
+	when 
+		$printNum : Number( );
+		eval($printNum.intValue() == 2)
+	then
+		System.out.print("o");
+end
+
+
+	
