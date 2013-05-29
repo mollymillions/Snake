@@ -25,7 +25,7 @@ rule "Print Snake"
         eval($printNum.intValue() == 1)
     then
         //actions
-		System.out.print("-");
+		System.out.print("x");
 end
 
 rule "Print Apple"

@@ -1,38 +1,36 @@
 package com.snake;
 
 public class Snake {
-	private
-		Unit[] body;
-		int length;
-		boolean isDead;
+	private Unit[] body;
+	private int length;
+	private boolean isDead;
 		
-	public
-		Snake() {
-			this.length = 4;
-			this.isDead = false;
-			this.body = new Unit[this.length];
-			for (int i=0; i < length; i++) {
-				body[i] = new Unit(0,i);
-			}
+	public Snake() {			
+		this.length = 4;
+		this.isDead = false;
+		this.body = new Unit[this.length];
+		for (int i=0; i < length; i++) {
+			body[i] = new Unit(i,0);
 		}
+	}
 		
-		Unit[] getBody() {
-			return this.body;
-		}
+	public Unit[] getBody() {
+		return this.body;
+	}
 	
-		int getLength() {
-			return this.length;
-		}
+	public int getLength() {
+		return this.length;
+	}
 		
-		boolean getIsDead() {
-			return this.isDead;
-		}
+	public boolean getIsDead() {
+		return this.isDead;
+	}
 				
-		void setLength(int length) {
-			this.length = length;
-		}
+	public void setLength(int length) {
+		this.length = length;
+	}
 		
-		void setIsDead(boolean isDead) {
-			this.isDead = isDead;
-		}
+	public void setIsDead(boolean isDead) {
+		this.isDead = isDead;
+	}
 }

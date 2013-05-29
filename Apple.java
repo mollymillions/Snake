@@ -3,31 +3,34 @@ package com.snake;
 import java.util.Random;
 
 public class Apple {
-	private
-		int appleX;
-		int appleY;
-		Random generator;
+	private int appleX;
+	private int appleY;
+	private Random generator;
 		
-	public
-		Apple() {
-			this.generator = new Random();
-			this.appleX = generator.nextInt(20);
-			this.appleY = generator.nextInt(20);
-		}
+	public Apple() {
+		this.generator = new Random();
+		this.appleX = generator.nextInt(10);
+		this.appleY = generator.nextInt(10);
+	}
 	
-		int getAppleX() {
-			return this.appleX;
-		}
+	public int getAppleX() {
+		return this.appleX;
+	}
 		
-		int getAppleY() {
-			return this.appleY;
-		}
+	public int getAppleY() {
+		return this.appleY;
+	}
 		
-		void setAppleX(int appleX) {
-			this.appleX = appleX;
-		}
+	public void setAppleX(int appleX) {
+		this.appleX = appleX;
+	}
 		
-		void setAppleY(int appleY) {
-			this.appleY = appleY;
-		}
+	public void setAppleY(int appleY) {
+		this.appleY = appleY;
+	}
+	
+	public void newRandCoords() {
+		this.appleX = generator.nextInt(10);
+		this.appleY = generator.nextInt(10);
+	}
 }

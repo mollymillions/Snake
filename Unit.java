@@ -1,34 +1,33 @@
 package com.snake;
 
 public class Unit {
-	private
-		int xCoord;
-		int yCoord;
+	private int xCoord;
+	private int yCoord;
 		
-	public
-		Unit() {
-			xCoord = 0;
-			yCoord = 0;
-		}
 	
-		Unit(int xCoord, int yCoord) {
-			this.xCoord = xCoord;
-			this.yCoord = yCoord;
-		}
+	public Unit() {
+		xCoord = 0;
+		yCoord = 0;
+	}
 	
-		int getXCoord() {
-			return this.xCoord;
-		}
+	public Unit(int xCoord, int yCoord) {
+		this.xCoord = xCoord;
+		this.yCoord = yCoord;
+	}
 	
-		int getYCoord() {
-			return this.yCoord;
-		}
+	public Integer getXCoord() {
+		return new Integer(this.xCoord);
+	}
+	
+	public Integer getYCoord() {
+		return new Integer(this.yCoord);
+	}
 		
-		void setXCoord(int xCoord) {
-			this.xCoord = xCoord;
-		}
+	public void setXCoord(int xCoord) {
+		this.xCoord = xCoord;
+	}
 		
-		void setYCoord(int yCoord) {
-			this.yCoord = yCoord;
-		}
+	public void setYCoord(int yCoord) {
+		this.yCoord = yCoord;
+	}
 }
